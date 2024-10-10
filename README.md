@@ -1,0 +1,2 @@
+# BookCornerLib
+ Odoo Bookstore Addon

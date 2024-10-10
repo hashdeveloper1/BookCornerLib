@@ -1,0 +1,38 @@
+<odoo>
+    <menuitem
+        id = "library_root_menu"
+        name = "Library System v1"
+        sequence = "1"
+        web_icon = "library_system_v1,static/description/icon.png"
+    />
+        <menuitem
+            id = "order_menu"
+            name = "Order"
+            sequence = "1"
+            parent = "library_root_menu"
+    />
+    <menuitem
+            id = "customer_menu"
+            name = "Customers"
+            sequence = "2"
+            parent = "library_root_menu"
+    />
+    <menuitem
+            id = "conf_menu"
+            name = "Configration"
+            sequence = "3"
+            parent = "library_root_menu"
+    />
+    <menuitem
+            id = "book_menu"
+            name = "Book"
+            sequence = "1"
+            parent = "conf_menu"
+    />
+    <menuitem
+            id = "stock_menu"
+            name = "Stock"
+            sequence = "2"
+            parent = "conf_menu"
+    />
+</odoo>

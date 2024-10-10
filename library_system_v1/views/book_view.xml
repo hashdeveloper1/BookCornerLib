@@ -1,0 +1,63 @@
+<odoo>
+    <record id="book_view_tree" model="ir.ui.view">
+        <field name="name">book.tree</field>
+        <field name="model">book</field>
+        <field name="arch" type="xml">
+            <tree class="text-center">
+                <field name="code" string="Ref"/>
+                <field name="name"/>
+                <field name="peper_type"/>
+                <field name="cost"/>
+                <field name="price"/>
+                <field name="number"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="book_view_form" model="ir.ui.view">
+        <field name="name">book.form</field>
+        <field name="model">book</field>
+        <field name="arch" type="xml" >
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                          <h1>
+                              <field name="name"/>
+                          </h1>
+                    </div>
+                    <group>
+                        <group>
+                             <field name="peper_type"/>
+                             <field name="cost"/>
+                             <field name="price"/>
+                        </group>
+                        <group>
+                             <field name="code"/>
+                             <field name="number"/>
+                        </group>
+                    </group>
+
+                </sheet>
+                <div class="oe_chatter" >
+                   <field name="message_follower_ids"/>
+                   <field name="activity_ids"/>
+                   <field name="message_ids"/>
+               </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="all_book_action" model="ir.actions.act_window">
+        <field name="name">Books</field>
+        <field name="res_model">book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+           id = "book_item"
+           name = "AllBooks"
+           parent = "book_menu"
+           action = "all_book_action"
+    />
+
+</odoo>

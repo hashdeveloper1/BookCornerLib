@@ -1,0 +1,58 @@
+<odoo>
+    <record id="customer_view_tree" model="ir.ui.view">
+        <field name="name">customer.tree</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml">
+            <tree class="text-center">
+                <field name="name"/>
+                <field name="phone"/>
+                <field name="code" string="Ref"/>
+                <field name="due"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="customer_view_form" model="ir.ui.view">
+        <field name="name">customer.form</field>
+        <field name="model">customer</field>
+        <field name="arch" type="xml" >
+            <form>
+                <sheet>
+                    <div class="oe_title">
+                          <h1>
+                              <field name="name"/>
+                          </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="phone"/>
+                            <field name="code" string="Ref"/>
+                        </group>
+                        <group>
+                            <field name="due"/>
+                        </group>
+                    </group>
+
+                </sheet>
+                <div class="oe_chatter" >
+                   <field name="message_follower_ids"/>
+                   <field name="activity_ids"/>
+                   <field name="message_ids"/>
+               </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="all_customer_action" model="ir.actions.act_window">
+        <field name="name">customers</field>
+        <field name="res_model">customer</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+           id = "customer_item"
+           name = "AllCustomers"
+           parent = "customer_menu"
+           action = "all_customer_action"
+    />
+</odoo>

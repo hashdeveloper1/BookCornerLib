@@ -1,15 +1,17 @@
 # BookCornerLib
-
 # Odoo Bookstore Addon
-**BookCornerLib** is an internal library management system designed for efficiently managing paid book transactions and inventory.
-This tool simplifies the administrative processes of tracking sales, monitoring stock levels, and streamlining operations for library staff.
+
+*BookCornerLib* is an Odoo addon designed to enhance the functionality of your bookstore. 
+This module provides an integrated solution for managing book inventory, sales, and customer interactions,
+making it easier for bookstore owners to streamline their operations and improve customer experience.
 
 ## Features
-- Manage paid book transactions
-- Track inventory levels
-- Generate sales reports
-- User-friendly interface for staff
 
+- **Inventory Management**: Easily manage your book inventory with features for adding, updating, and removing titles.
+- **Sales Management**: Process sales efficiently with a user-friendly interface, including support for various payment methods.
+- **Customer Management**: Keep track of customer information, preferences, and purchase history to enhance marketing efforts and customer service.
+- **Reporting Tools**: Generate insightful reports to analyze sales performance, inventory levels, and customer trends.
+- **Search and Filter Options**: Quickly find books with advanced search and filtering capabilities based on title, author, genre, and more.
 
 ## Installation
 
